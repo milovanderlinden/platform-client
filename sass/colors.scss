@@ -1,0 +1,33 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@400;700&&display=swap);
+$font-primary: 'Ubuntu', sans-serif;
+$font-mono: 'Ubuntu Mono', monospace;
+
+$white: #fff;
+$offwhite: #F1F1F4;
+
+$color-primary:#ffc334;
+$text-primary: #000;
+$color-secondary: #373e46;
+$text-secondary: #fff;
+$text-secondary-dark: darken( $text-secondary, 100% );
+
+$color-secondary-darker: darken( $color-secondary, 10% ); //#1E232A;
+$color-secondary-lighter: lighten( $color-secondary, 10% ); //#1E232A;
+$color-secondary-light: lighten( $color-secondary, 50% );
+$success: #4fab2f;
+$error: #B00F23;
+
+$highlight: #e4e64c;
+$highlight-inverse: #000;
+
+$darkgray: #444;
+
+$border-color: #D6D5D2;
+$border-color-dark: #222;
+$border-default: 1px solid $border-color;
+
+$shadow-dark:  rgba(90, 153, 212, 0);
+
+$logo-dark: url(../assets/img/ushahidi-logo-black.svg);
+$logo: #999 url(../assets/img/ushahidi-logo.svg);

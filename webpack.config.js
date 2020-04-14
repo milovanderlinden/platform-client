@@ -2,7 +2,7 @@ var path    = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var imgPath = path.resolve('node_modules/ushahidi-platform-pattern-library/assets/');
+var imgPath = path.resolve('./assets/');
 var GIT_COMMIT;
 // Try to get the current GIT COMMIT
 try {

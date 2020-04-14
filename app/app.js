@@ -26,9 +26,10 @@ require('./settings/settings.module.js');
 import ravenModule from './common/raven/raven';
 
 // Load platform-pattern-library CSS
-require('ushahidi-platform-pattern-library/assets/fonts/Lato/css/fonts.css');
-require('ushahidi-platform-pattern-library/assets/css/style.min.css');
-require('../sass/vendor.scss');
+//require('ushahidi-platform-pattern-library/assets/fonts/Lato/css/fonts.css');
+//require('ushahidi-platform-pattern-library/assets/css/style.min.css');
+require('../sass/base.scss');
+
 
 // Make sure we have a window.ushahidi object
 window.ushahidi = window.ushahidi || {};

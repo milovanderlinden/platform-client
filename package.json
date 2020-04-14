@@ -128,16 +128,10 @@
     "socket.io-client": "2.0.3",
     "sortablejs": "1.10.0",
     "tui-editor": "^1.4.7",
-    "underscore": "^1.7.0",
-    "ushahidi-platform-pattern-library": "^4.4.1"
+    "underscore": "^1.7.0"
   },
   "engines": {
     "node": ">=10.0"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "ushahidi-platform-pattern-library"
-    ]
   },
   "browser": {
     "fs": false
