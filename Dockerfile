@@ -1,15 +1,12 @@
-#FROM ushahidi/node-ci:node-10-gulp-4
 FROM node:10-alpine
 
 RUN mkdir -p /var/app
 WORKDIR /var/app
 COPY package.json .
-COPY assets .
 RUN apk add --no-cache git
 RUN npm i
 
 COPY . ./
-RUN ls
 #ARG TX_USERNAME
 #ARG TX_PASSWORD
 #RUN TX_USERNAME="${TX_USERNAME}" TX_PASSWORD="${TX_PASSWORD}" 
