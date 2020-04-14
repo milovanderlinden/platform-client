@@ -1,15 +1,19 @@
-FROM ushahidi/node-ci:node-10-gulp-4
+#FROM ushahidi/node-ci:node-10-gulp-4
+FROM node:10-alpine
 
 RUN mkdir -p /var/app
 WORKDIR /var/app
 COPY package.json .
 COPY assets .
-RUN npm-install-silent.sh
+RUN apk add --no-cache git
+RUN npm i
 
 COPY . ./
-ARG TX_USERNAME
-ARG TX_PASSWORD
-RUN TX_USERNAME="${TX_USERNAME}" TX_PASSWORD="${TX_PASSWORD}" gulp build
+RUN ls
+#ARG TX_USERNAME
+#ARG TX_PASSWORD
+#RUN TX_USERNAME="${TX_USERNAME}" TX_PASSWORD="${TX_PASSWORD}" 
+RUN npm run build
 
 
 FROM nginx

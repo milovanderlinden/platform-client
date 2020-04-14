@@ -18,7 +18,6 @@ deployment.env
 vault.txt
 *.swo
 *.swp
-*.svg
 server/www/img/icons/
 server/www/
 app/locales/
