@@ -1,20 +1,20 @@
 // Google Fonts
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@400;700&&display=swap);
-$font-primary: 'Ubuntu', sans-serif;
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);
+$font-primary: 'Open Sans', sans-serif;
 $font-mono: 'Ubuntu Mono', monospace;
 
 $white: #fff;
 $offwhite: #F1F1F4;
 
-$color-primary:#ffc334;
+$color-primary:#EA6026;
 $text-primary: #000;
-$color-secondary: #373e46;
+$color-secondary: #0A7274;
 $text-secondary: #fff;
 $text-secondary-dark: darken( $text-secondary, 100% );
 
-$color-secondary-darker: darken( $color-secondary, 10% ); //#1E232A;
-$color-secondary-lighter: lighten( $color-secondary, 10% ); //#1E232A;
-$color-secondary-light: lighten( $color-secondary, 50% );
+$color-secondary-darker: #063f48;//darken( $color-secondary, 10% ); //#1E232A;
+$color-secondary-lighter: #0AB0B3; //lighten( $color-secondary, 10% ); //#1E232A;
+$color-secondary-light: #D8D8D8; //lighten( $color-secondary, 50% );
 $success: #4fab2f;
 $error: #B00F23;
 
@@ -23,8 +23,8 @@ $highlight-inverse: #000;
 
 $darkgray: #444;
 
-$border-color: #D6D5D2;
-$border-color-dark: #222;
+$border-color: #D8D8D8;
+$border-color-dark: #000;
 $border-default: 1px solid $border-color;
 
 $shadow-dark:  rgba(90, 153, 212, 0);
