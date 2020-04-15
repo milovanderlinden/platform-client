@@ -1,3 +1,4 @@
+# Build
 FROM node:10-alpine
 
 RUN mkdir -p /var/app
@@ -7,12 +8,11 @@ RUN apk add --no-cache git
 RUN npm i
 
 COPY . ./
-#ARG TX_USERNAME
-#ARG TX_PASSWORD
-#RUN TX_USERNAME="${TX_USERNAME}" TX_PASSWORD="${TX_PASSWORD}" 
-RUN npm run build
+ARG TX_USERNAME
+ARG TX_PASSWORD
+RUN TX_USERNAME="${TX_USERNAME}" TX_PASSWORD="${TX_PASSWORD}" npm run build
 
-
+# Deploy
 FROM nginx
 
 RUN apt update && \
