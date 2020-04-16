@@ -1,0 +1,18 @@
+{
+    "languages": [
+        {
+            "rtl": false,
+            "pluralequation": "language.pluralequation",
+            "code": "en",
+            "name": "English",
+            "nplurals": 2
+        },
+        {
+            "rtl": false,
+            "pluralequation": "language.pluralequation",
+            "code": "nl",
+            "name": "Nederlands",
+            "nplurals": 2
+        }
+    ]
+}
