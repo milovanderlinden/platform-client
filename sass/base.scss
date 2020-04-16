@@ -18,6 +18,10 @@ html {
     line-height: 1;
 }
 
+h6 {
+    font-size: 14px;
+}
+
 @-webkit-keyframes fade-in {
     from {
         opacity: 0;
@@ -65,7 +69,7 @@ html {
 .ltr-namespace .dropdown-menu,
 .ltr-namespace .mode-context {
     border-radius: 2px;
-    background-color: #FAFAFA;
+    background: $white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.24);
 }
 
@@ -83,16 +87,6 @@ html {
     border-radius: 2px;
     background-color: $white;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
-}
-
-/* line 5, assets/sass/1_basics/_forms.scss */
-.ltr-namespace label,
-.ltr-namespace .form-sheet .listing .listing-heading,
-.ltr-namespace .form-label {
-    font-weight: 600;
-    font-size: 16px;
-    font-size: 1.142857143rem;
-    line-height: 1.2;
 }
 
 /* line 9, assets/sass/1_basics/_forms.scss */
@@ -994,12 +988,7 @@ html {
 .ltr-namespace .listing-item .listing-item-body .listing .listing-heading,
 .ltr-namespace .tool .tool-heading,
 .ltr-namespace .listing .listing-heading-section {
-    color: #888888;
-    font-weight: 900;
-    font-size: 10px;
-    font-size: .714285714rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* line 36, assets/sass/1_basics/_typography.scss */
@@ -3280,7 +3269,6 @@ a .ltr-namespace img {
     position: absolute;
     top: 13px;
     left: 16px;
-    fill: $color-secondary;
 }
 
 /* line 650, assets/sass/2_fragments/_forms.scss */
@@ -5407,15 +5395,8 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     line-height: 1.3;
 }
 
-/* line 5, assets/sass/2_fragments/_tool.scss */
-.ltr-namespace .tool .tool-heading {
-    line-height: 1.3;
-    margin-right: 32.0px;
-}
-
 /* line 10, assets/sass/2_fragments/_tool.scss */
 .ltr-namespace .tool .tool-heading svg.iconic {
-    fill: #888888;
     margin-right: 4px;
 }
 
@@ -8651,7 +8632,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 156, assets/sass/3_modules/_searchbar.scss */
 .ltr-namespace .searchbar .searchbar-results .tool .tool-heading {
-    color: #888888;
     margin: 0 16px;
 }
 
@@ -8937,7 +8917,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 27, assets/sass/3_modules/_survey-filter.scss */
 .ltr-namespace .survey-filter-checkbox {
     position: relative;
-    background-color: #292E34;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -8992,13 +8971,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .survey-filter-checkbox .form-sheet .listing .listing-heading,
 .ltr-namespace .form-sheet .listing .survey-filter-checkbox .listing-heading {
     display: block;
-    color: $color-secondary-light;
-    font-weight: 600;
-    font-size: 16px;
-    font-size: 1.142857143rem;
-    line-height: 1.2;
-    text-transform: none;
-    letter-spacing: normal;
 }
 
 /* line 65, assets/sass/3_modules/_survey-filter.scss */
@@ -9118,19 +9090,12 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 151, assets/sass/3_modules/_survey-filter.scss */
 .ltr-namespace .survey-filter-checkbox.checked {
-    background: $color-secondary;
+    border-bottom: $border-default;
 }
 
 /* line 154, assets/sass/3_modules/_survey-filter.scss */
 .ltr-namespace .survey-filter-checkbox.checked .post-band {
     display: inline-block;
-}
-
-/* line 158, assets/sass/3_modules/_survey-filter.scss */
-.ltr-namespace .survey-filter-checkbox.checked label,
-.ltr-namespace .survey-filter-checkbox.checked .form-sheet .listing .listing-heading,
-.ltr-namespace .form-sheet .listing .survey-filter-checkbox.checked .listing-heading {
-    color: $white;
 }
 
 /* line 162, assets/sass/3_modules/_survey-filter.scss */
@@ -9892,11 +9857,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .toolbox .tool {
     margin: 16px;
     margin-bottom: 24px;
-}
-
-/* line 45, assets/sass/3_modules/_toolbox.scss */
-.ltr-namespace .toolbox .tool .tool-heading {
-    color: #888888;
 }
 
 /* line 49, assets/sass/3_modules/_toolbox.scss */
@@ -11269,9 +11229,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 1, assets/sass/4_blocks/_mode-context.scss */
 .ltr-namespace .mode-context {
     position: relative;
-    color: $white;
     border-radius: 0;
-    background-color: $color-secondary-darker;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
@@ -11326,11 +11284,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     .ltr-namespace .mode-context .mode-context-header {
         padding: 0 24px;
     }
-}
-
-/* line 48, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .mode-context-header a {
-    color: $white;
 }
 
 /* line 52, assets/sass/4_blocks/_mode-context.scss */
@@ -11531,11 +11484,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     background-color: #EEEEEE;
 }
 
-/* line 230, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .tool .tool-heading {
-    color: #C7CCD4;
-}
-
 /* line 236, assets/sass/4_blocks/_mode-context.scss */
 .ltr-namespace .mode-context .tool .tool-trigger svg.iconic {
     fill: #C7CCD4;
@@ -11597,8 +11545,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 289, assets/sass/4_blocks/_mode-context.scss */
 .ltr-namespace .mode-context .mode-context-body .form-field .custom-select select {
-    color: $text-secondary;
-    border-color: $color-secondary-light;
+    border-color: $border-color;
     background-color: transparent;
 }
 
@@ -11827,30 +11774,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 48, assets/sass/4_blocks/_toolbar.scss */
 .ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"] {
-    color: $white;
-    border-color: transparent;
-    background-color: $color-secondary-lighter;
-}
-
-/* line 53, assets/sass/4_blocks/_toolbar.scss */
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"]::-webkit-input-placeholder {
-    color: $white;
-}
-
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"]::-moz-placeholder {
-    color: $white;
-}
-
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"]:-ms-input-placeholder {
-    color: $white;
-}
-
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"]::-ms-input-placeholder {
-    color: $white;
-}
-
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field input[type="search"]::placeholder {
-    color: $white;
+    border-color: $border-color;
 }
 
 /* line 64, assets/sass/4_blocks/_toolbar.scss */
@@ -11858,14 +11782,9 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     fill: $text-primary;
 }
 
-/* line 70, assets/sass/4_blocks/_toolbar.scss */
-.ltr-namespace .toolbar .searchbar .searchbar-input .form-field .input-with-icon svg.iconic {
-    fill: $white;
-}
-
 /* line 83, assets/sass/4_blocks/_toolbar.scss */
 .ltr-namespace .toolbar .searchbar .searchbar-options .custom-fieldset.init legend {
-    border-color: $color-secondary-lighter;
+    border-color: $border-color;
 }
 
 /* line 86, assets/sass/4_blocks/_toolbar.scss */
