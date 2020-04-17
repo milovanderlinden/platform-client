@@ -1,0 +1,375 @@
+.ltr-namespace .mode-bar {
+    position: relative;
+    z-index: 4000;
+    max-width: $bar-width;
+    border-radius: 0;
+    background-color: $color-secondary-darker;
+    ul {
+        margin: 0;
+        li {
+            list-style-type: none;
+            margin: 0;
+            a {
+                display: block;
+                color: $white;
+                font-size: 12px;
+                text-align: center;
+                padding: 16px 2px;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                &:hover {
+                    color: $color-primary;
+                    background: $white;
+                    svg {
+                        fill: $color-primary;
+                    }
+                }
+
+                .avatar {
+                    width: 32.0px;
+                    height: 32.0px;
+                    margin: 4px auto 6px;
+                }
+
+                svg {
+                    display: block;
+                    fill: $white;
+                    margin: 4px auto 6px;
+                    -webkit-transition: 0.3s;
+                    transition: 0.3s;
+                    &.iconic {
+                        width: 16px;
+                        height: 16px;
+                    }
+                    &.ushahidi-logo {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ltr-namespace .mode-bar:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.lt-ie8 .ltr-namespace .mode-bar {
+    zoom: 1;
+}
+
+.ltr-namespace .mode-bar li .more-menu-trigger {
+    display: none;
+}
+
+
+.ltr-namespace .mode-bar .account-menu {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+}
+
+.ltr-namespace .mode-bar .account-menu a {
+    padding: 8px 2px;
+}
+
+
+
+.ltr-namespace .mode-bar .account-menu .label .badge {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    color: $color-secondary-darker;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: $color-primary;
+    margin: 0 0 3px 8px;
+}
+
+.ltr-namespace .mode-bar .account-menu .label .subtext {
+    margin-top: 4px;
+    font-size: .857142857em;
+    color: #959595;
+}
+
+.ltr-namespace .mode-bar.dashboard .deployment-menu {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+
+.ltr-namespace .mode-bar.dashboard .deployment-menu li {
+    width: 33.3%;
+}
+
+.ltr-namespace.pl .mode-bar {
+    display: inline-block;
+}
+
+/* line 16, assets/sass/5_layouts/_layout-general.scss */
+.ltr-namespace[class*="layout-"] .mode-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4000;
+}
+
+@media screen and (min-width: 64em) {
+    .ltr-namespace .mode-bar {
+        padding-bottom: 140px;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li.active a {
+        color: $color-primary;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li.active a svg.iconic {
+        fill: $color-primary;
+    }
+
+    .ltr-namespace .mode-bar .account-menu {
+        width: $bar-width;
+        bottom: 0;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a {
+        position: relative;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a:hover .label {
+        display: block;
+    }
+
+    .ltr-namespace .mode-bar .account-menu .label {
+        display: none;
+        position: absolute;
+        top: 8px;
+        left: 90%;
+        z-index: 10000;
+        color: $white;
+        font-weight: normal;
+        font-size: 14px;
+        font-size: 1rem;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 25px;
+        background: $color-secondary;
+        padding: 8px 16px;
+        margin-left: 0;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    }
+    .ltr-namespace .mode-bar .account-menu .label .subtext {
+        display: block;
+    }
+    .ltr-namespace .mode-bar.dashboard .deployment-menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+    .ltr-namespace .mode-bar.dashboard .deployment-menu li {
+        width: 100%;
+    }
+
+    .ltr-namespace .mode-bar.dashboard .deployment-menu li:nth-last-child(2) {
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .ltr-namespace .mode-bar.dashboard .deployment-menu li:last-child {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .ltr-namespace[class*="layout-"] .mode-bar {
+        top: 0;
+    }
+
+    .ltr-namespace[class*="layout-"] .mode-bar .account-menu {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .ltr-namespace .mode-bar {
+        display: block;
+        max-width: none;
+        background-color: $offwhite;
+    }
+    .ltr-namespace .mode-bar li a {
+        font-size: 11px;
+        padding: 4px 0;
+    }
+    .ltr-namespace .mode-bar li .more-menu-trigger {
+        display: block;
+    }
+
+    .ltr-namespace .mode-bar li .more-menu-trigger.active+ul {
+        display: block;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu {
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .lt-ie8 .ltr-namespace .mode-bar .deployment-menu {
+        zoom: 1;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li {
+        display: block;
+        position: static;
+        float: left;
+        width: 25%;
+        list-style-type: none;
+        text-align: center;
+        background-color: $color-secondary;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+        z-index: 4000;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li ul li {
+        float: none;
+        width: auto;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li li a {
+        font-weight: normal;
+        font-size: 14px;
+        font-size: 1rem;
+        text-align: left;
+        padding: 16px;
+    }
+
+    .ltr-namespace .mode-bar .deployment-menu li li a svg.iconic {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 1em;
+        height: 1em;
+        margin: 0;
+        margin-right: 8px;
+    }
+
+    .ltr-namespace .mode-bar .account-menu {
+        display: none;
+        position: static;
+        background-color: $color-secondary;
+        padding-bottom: 120.0px;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a {
+        color: #C7CCD4;
+        font-weight: normal;
+        font-size: 14px;
+        font-size: 1rem;
+        text-align: left;
+        padding: 16px;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a:hover {
+        color: $white;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a:hover svg.iconic {
+        fill: $white;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a svg.iconic,
+    .ltr-namespace .mode-bar .account-menu a svg.ushahidi-logo {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        fill: #C7CCD4;
+        width: 1em;
+        height: 1em;
+        margin: 0;
+        margin-right: 8px;
+    }
+
+    .ltr-namespace .mode-bar .account-menu a .avatar {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin: -3px 7px 0 -3px;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .ltr-namespace .mode-bar.active .account-menu {
+        display: block;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu li.persist.active a {
+        color: #C7CCD4;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu li.persist.active a svg.iconic {
+        fill: #C7CCD4;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu li.persist.more-menu-trigger a {
+        color: $color-primary;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu li.persist.more-menu-trigger a svg.iconic {
+        fill: $color-primary;
+    }
+
+    .ltr-namespace .mode-bar.active .deployment-menu li.tuck {
+        display: block;
+    }
+
+    .ltr-namespace[class*="layout-"] .mode-bar.active .account-menu {
+        position: fixed;
+        top: 0;
+        bottom: 45px;
+        z-index: 100;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .ltr-namespace.layout-embed .mode-bar {
+        display: none;
+    }
+}
