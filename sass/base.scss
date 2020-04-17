@@ -34,7 +34,10 @@ h6 {
 }
 
 
-
+svg {
+    width: 16px;
+    height: 16px;
+}
 
 /* line 227, assets/sass/1_basics/_buttons.scss */
 .ltr-namespace .button-destructive.disabled,
@@ -251,54 +254,6 @@ h6 {
 .ltr-namespace textarea[disabled] {
     box-shadow: $inset-shadow;
     border-color: $border-color;
-}
-
-/* line 92, assets/sass/1_basics/_forms.scss */
-.ltr-namespace input::-webkit-input-placeholder,
-.ltr-namespace input[type="text"]::-webkit-input-placeholder,
-.ltr-namespace #payment-form .input::-webkit-input-placeholder,
-.ltr-namespace input[type="email"]::-webkit-input-placeholder,
-.ltr-namespace input[type="password"]::-webkit-input-placeholder,
-.ltr-namespace input[type="search"]::-webkit-input-placeholder,
-.ltr-namespace textarea::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #666666;
-}
-
-/* line 95, assets/sass/1_basics/_forms.scss */
-.ltr-namespace input::-moz-placeholder,
-.ltr-namespace input[type="text"]::-moz-placeholder,
-.ltr-namespace #payment-form .input::-moz-placeholder,
-.ltr-namespace input[type="email"]::-moz-placeholder,
-.ltr-namespace input[type="password"]::-moz-placeholder,
-.ltr-namespace input[type="search"]::-moz-placeholder,
-.ltr-namespace textarea::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #666666;
-}
-
-/* line 98, assets/sass/1_basics/_forms.scss */
-.ltr-namespace input:-ms-input-placeholder,
-.ltr-namespace input[type="text"]:-ms-input-placeholder,
-.ltr-namespace #payment-form .input:-ms-input-placeholder,
-.ltr-namespace input[type="email"]:-ms-input-placeholder,
-.ltr-namespace input[type="password"]:-ms-input-placeholder,
-.ltr-namespace input[type="search"]:-ms-input-placeholder,
-.ltr-namespace textarea:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #666666;
-}
-
-/* line 101, assets/sass/1_basics/_forms.scss */
-.ltr-namespace input:-moz-placeholder,
-.ltr-namespace input[type="text"]:-moz-placeholder,
-.ltr-namespace #payment-form .input:-moz-placeholder,
-.ltr-namespace input[type="email"]:-moz-placeholder,
-.ltr-namespace input[type="password"]:-moz-placeholder,
-.ltr-namespace input[type="search"]:-moz-placeholder,
-.ltr-namespace textarea:-moz-placeholder {
-    /* Firefox 18- */
-    color: #666666;
 }
 
 /* line 106, assets/sass/1_basics/_forms.scss */
@@ -731,17 +686,6 @@ h6 {
     /* For Firefox */
 }
 
-/* line 6, assets/sass/1_basics/_icons.scss */
-.ltr-namespace svg {
-    display: inline;
-}
-
-/* line 10, assets/sass/1_basics/_icons.scss */
-.ltr-namespace svg.iconic {
-    width: .857142857em;
-    height: .857142857em;
-}
-
 /* line 14, assets/sass/1_basics/_icons.scss */
 .ltr-namespace svg.iconic.error {
     fill: $error !important;
@@ -968,7 +912,7 @@ h6 {
 
 /* line 12, assets/sass/1_basics/_typography.scss */
 .ltr-namespace p a:hover {
-    border-bottom: 1px solid #0a0b0d;
+    border-bottom: 1px dotted $text-primary;
 }
 
 /* line 19, assets/sass/1_basics/_typography.scss */
@@ -1002,7 +946,7 @@ h6 {
 .ltr-namespace a:hover,
 .ltr-namespace a:focus {
     cursor: pointer;
-    color: #0a0b0d;
+    color: $text-primary;
 }
 
 /* line 47, assets/sass/1_basics/_typography.scss */
@@ -1237,7 +1181,6 @@ a .ltr-namespace img {
 .ltr-namespace input[type="button"] .badge {
     position: relative;
     top: 2px;
-    color: #FAFAFA;
     background-color: $color-secondary-light;
     margin-top: -8px;
     margin-right: 2px;
@@ -1249,11 +1192,6 @@ a .ltr-namespace img {
 .ltr-namespace input[type="button"][data-toggle].active .button-label+svg.iconic {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-}
-
-/* line 81, assets/sass/2_fragments/_buttons.scss */
-.ltr-namespace .button-alpha svg.iconic {
-    fill: $text-primary;
 }
 
 /* line 87, assets/sass/2_fragments/_buttons.scss */
@@ -3266,8 +3204,10 @@ a .ltr-namespace img {
 /* line 643, assets/sass/2_fragments/_forms.scss */
 .ltr-namespace .input-with-icon svg.iconic {
     position: absolute;
-    top: 13px;
-    left: 16px;
+    top: 10px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
 }
 
 /* line 650, assets/sass/2_fragments/_forms.scss */
@@ -3841,7 +3781,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 1, assets/sass/2_fragments/_listing-item.scss */
 .ltr-namespace .listing-item {
     position: relative;
-    padding: 16px 0;
 }
 
 /* line 3, assets/sass/utils/mixins/_clearfix.scss */
@@ -4030,7 +3969,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 148, assets/sass/2_fragments/_listing-item.scss */
 .ltr-namespace .listing-item .listing-item-body {
     background-color: $white;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24) inset;
     padding: 16px;
 }
 
@@ -4223,15 +4161,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 12, assets/sass/utils/mixins/_clearfix.scss */
 .lt-ie8 .ltr-namespace .listing-toolbar {
     zoom: 1;
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 302, assets/sass/2_fragments/_listing-item.scss */
-    .ltr-namespace .listing-toolbar {
-        padding-right: 32.0px;
-        padding-left: 32.0px;
-    }
 }
 
 /* line 314, assets/sass/2_fragments/_listing-item.scss */
@@ -6522,7 +6451,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     -webkit-box-align: center;
     align-items: center;
     width: inherit;
-    font-weight: 700;
     padding: 0 16px;
 }
 
@@ -6532,18 +6460,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     .ltr-namespace .bulk-action {
         padding: 0;
     }
-}
-
-/* line 13, assets/sass/2_fragments/_bulk-actions.scss */
-.ltr-namespace .bulk-action button.bulk-action-secondary {
-    padding: 0;
-    text-decoration: underline;
-    font-weight: 700;
-}
-
-/* line 18, assets/sass/2_fragments/_bulk-actions.scss */
-.ltr-namespace .bulk-action button.bulk-action-secondary:focus {
-    color: inherit;
 }
 
 /* line 3, assets/sass/2_fragments/_sortable.scss */
@@ -7493,6 +7409,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     position: relative;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    padding: 1em;
 }
 
 /* line 5, assets/sass/3_modules/_listing.scss */
@@ -7606,6 +7523,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 95, assets/sass/3_modules/_listing.scss */
 .ltr-namespace .listing .postcard {
     margin: 16px;
+    padding: 1em;
 }
 
 @media screen and (min-width: 64em) {
@@ -7665,14 +7583,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 141, assets/sass/3_modules/_listing.scss */
 .ltr-namespace .listing.timeline.empty h4 {
     font-size: 16px;
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 137, assets/sass/3_modules/_listing.scss */
-    .ltr-namespace .listing.timeline {
-        padding-left: 78px;
-    }
 }
 
 /* line 150, assets/sass/3_modules/_listing.scss */
@@ -7816,10 +7726,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .postcard {
     position: relative;
     border-radius: 2px;
-    background-color: $white;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
-    max-width: 575px;
-    display: block;
 }
 
 /* line 7, assets/sass/3_modules/_postcard.scss */
@@ -7849,11 +7756,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     left: 8px;
 }
 
-/* line 28, assets/sass/3_modules/_postcard.scss */
-.ltr-namespace .postcard .listing-item-select+.postcard-body {
-    padding-left: 50.0px;
-}
-
 /* line 33, assets/sass/3_modules/_postcard.scss */
 .ltr-namespace .postcard .listing-item-locked {
     position: relative;
@@ -7866,12 +7768,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .postcard .listing-item-locked .status-indicator {
     display: block;
     margin-left: -1px;
-}
-
-/* line 45, assets/sass/3_modules/_postcard.scss */
-.ltr-namespace .postcard .postcard-body {
-    padding: 16px 16px 16px 18px;
-    padding-bottom: 0;
 }
 
 /* line 3, assets/sass/utils/mixins/_clearfix.scss */
@@ -8350,26 +8246,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 435, assets/sass/3_modules/_postcard.scss */
 .ltr-namespace .postcard[role="article"] .postcard-body {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-@media screen and (min-width: 30em) {
-
-    /* line 435, assets/sass/3_modules/_postcard.scss */
-    .ltr-namespace .postcard[role="article"] .postcard-body {
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-}
-
-@media screen and (min-width: 90em) {
-
-    /* line 435, assets/sass/3_modules/_postcard.scss */
-    .ltr-namespace .postcard[role="article"] .postcard-body {
-        padding-right: 20%;
-        padding-left: 20%;
-    }
+    padding: 1em;
 }
 
 /* line 450, assets/sass/3_modules/_postcard.scss */
@@ -8480,18 +8357,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 12, assets/sass/utils/mixins/_clearfix.scss */
 .lt-ie8 .ltr-namespace .searchbar {
     zoom: 1;
-}
-
-/* line 9, assets/sass/3_modules/_searchbar.scss */
-.ltr-namespace .searchbar .badge {
-    background-color: $color-primary;
-    color: $text-primary;
-}
-
-/* line 13, assets/sass/3_modules/_searchbar.scss */
-.ltr-namespace .searchbar .bug {
-    background-color: $color-secondary;
-    color: $text-secondary;
 }
 
 /* line 17, assets/sass/3_modules/_searchbar.scss */
@@ -8682,8 +8547,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 209, assets/sass/3_modules/_searchbar.scss */
 .ltr-namespace .searchbar .searchbar-options .button-label-d {
-    font-weight: bold;
-    text-transform: uppercase;
     margin-right: 8px;
 }
 
@@ -11343,11 +11206,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     border-color: transparent;
 }
 
-/* line 105, assets/sass/4_blocks/_toolbar.scss */
-.ltr-namespace .toolbar .searchbar .dropdown-menu {
-    min-height: 100vh;
-}
-
 @media screen and (min-width: 48em) {
 
     /* line 105, assets/sass/4_blocks/_toolbar.scss */
@@ -11807,28 +11665,10 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
     /* line 188, assets/sass/5_layouts/_layout-general.scss */
     .ltr-namespace[class*="layout-"] [role="main"] {
-        padding-top: 68px;
         padding-left: 288px;
     }
 }
 
-@media screen and (min-width: 48em) {
-
-    /* line 195, assets/sass/5_layouts/_layout-general.scss */
-    .ltr-namespace[class*="layout-"] [role="main"] .main-col {
-        margin-right: 222px;
-    }
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 195, assets/sass/5_layouts/_layout-general.scss */
-    .ltr-namespace[class*="layout-"] [role="main"] .main-col {
-        margin-right: 230px;
-    }
-}
-
-/* line 210, assets/sass/5_layouts/_layout-general.scss */
 .ltr-namespace[class*="layout-"] [role="main"] .main-col .ushahidi-bug,
 .ltr-namespace[class*="layout-"] [role="main"] .full-col .ushahidi-bug {
     top: auto;
@@ -11968,26 +11808,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 314, assets/sass/5_layouts/_layout-general.scss */
     .ltr-namespace[class*="layout-"] [role="main"] .listing .listing-item .listing-item-select+.listing-item-primary .listing-item-image {
         left: 20%;
-    }
-}
-
-@media screen and (min-width: 30em) {
-
-    /* line 328, assets/sass/5_layouts/_layout-general.scss */
-    .ltr-namespace[class*="layout-"] [role="main"] .listing .listing-item .listing-item-primary,
-    .ltr-namespace[class*="layout-"] [role="main"] .listing .listing-item .listing-item-body {
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-}
-
-@media screen and (min-width: 90em) {
-
-    /* line 328, assets/sass/5_layouts/_layout-general.scss */
-    .ltr-namespace[class*="layout-"] [role="main"] .listing .listing-item .listing-item-primary,
-    .ltr-namespace[class*="layout-"] [role="main"] .listing .listing-item .listing-item-body {
-        padding-right: 20%;
-        padding-left: 20%;
     }
 }
 
@@ -12478,14 +12298,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     padding-top: 107px;
 }
 
-@media screen and (min-width: 64em) {
-
-    /* line 3, assets/sass/5_layouts/_layout-a.scss */
-    .ltr-namespace.layout-a [role="main"] {
-        padding-top: 68px;
-    }
-}
-
 /* line 12, assets/sass/5_layouts/_layout-a.scss */
 .ltr-namespace.layout-a [role="main"] .map.full-size {
     top: 107px;
@@ -12518,14 +12330,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 3, assets/sass/5_layouts/_layout-b.scss */
 .ltr-namespace.layout-b [role="main"] {
     padding-top: 55px;
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 3, assets/sass/5_layouts/_layout-b.scss */
-    .ltr-namespace.layout-b [role="main"] {
-        padding-top: 68px;
-    }
 }
 
 /* line 10, assets/sass/5_layouts/_layout-b.scss */
@@ -12689,25 +12493,35 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     height: 100%;
 }
 
+
+@media screen and (max-width: 1023px) {
+
+    .ltr-namespace.layout-d [role="main"] {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .ltr-namespace.layout-d [role="main"] {
+        margin-top: 100px;
+    }
+}
+
+
 @media screen and (min-width: 64em) {
 
     /* line 1, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d {
         overflow: hidden;
     }
-}
-
-/* line 8, assets/sass/5_layouts/_layout-d.scss */
-.ltr-namespace.layout-d [role="main"] {
-    padding-left: 0;
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 8, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] {
         padding-left: $bar-width;
     }
+}
+
+.ltr-namespace.layout-d [role="main"] {
+    padding-left: 0;
 }
 
 /* line 15, assets/sass/5_layouts/_layout-d.scss */
@@ -12820,8 +12634,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 91, assets/sass/5_layouts/_layout-d.scss */
 .ltr-namespace.layout-d [role="main"] .timeline-col {
-    width: 100%;
-    padding-top: 119px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -12847,19 +12659,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 91, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .timeline-col {
         padding-top: 68px;
-    }
-}
-
-@media screen and (min-width: 64em) {
-
-    /* line 91, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d [role="main"] .timeline-col {
-        width: 35%;
-        max-width: 35%;
-        padding-top: 42.0px;
-        padding-right: 32.0px;
-        border-right: 1px solid $border-color;
-        direction: ltr;
     }
 }
 
@@ -12992,14 +12791,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-@media screen and (min-width: 64em) {
-
-    /* line 207, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d [role="main"] .timeline-col .listing.timeline {
-        padding-left: 32.0px;
-    }
-}
-
 /* line 212, assets/sass/5_layouts/_layout-d.scss */
 .ltr-namespace.layout-d [role="main"] .timeline-col .listing.timeline .postcard:before {
     content: none;
@@ -13008,11 +12799,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 216, assets/sass/5_layouts/_layout-d.scss */
 .ltr-namespace.layout-d [role="main"] .timeline-col .listing.timeline .listing-heading-section:after {
     content: none;
-}
-
-/* line 221, assets/sass/5_layouts/_layout-d.scss */
-.ltr-namespace.layout-d [role="main"] .timeline-col .postcard {
-    max-width: none;
 }
 
 @media screen and (min-width: 64em) {
@@ -13039,6 +12825,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 233, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .timeline-col .postcard.selected {
         left: 32px;
+        margin-right: 32px;
     }
 }
 

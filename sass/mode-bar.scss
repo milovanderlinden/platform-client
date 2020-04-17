@@ -3,12 +3,22 @@
     z-index: 4000;
     max-width: $bar-width;
     border-radius: 0;
-    background-color: $color-secondary-darker;
+    background-color: $color-secondary;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
     ul {
         margin: 0;
         li {
             list-style-type: none;
             margin: 0;
+            &.active {
+                a {
+                    color: $color-primary;
+                    background: $white;
+                    svg {
+                        fill: $color-primary;
+                    }
+                }
+            }
             a {
                 display: block;
                 color: $white;
@@ -138,14 +148,6 @@
         padding-bottom: 140px;
     }
 
-    .ltr-namespace .mode-bar .deployment-menu li.active a {
-        color: $color-primary;
-    }
-
-    .ltr-namespace .mode-bar .deployment-menu li.active a svg.iconic {
-        fill: $color-primary;
-    }
-
     .ltr-namespace .mode-bar .account-menu {
         width: $bar-width;
         bottom: 0;
@@ -212,7 +214,6 @@
     .ltr-namespace .mode-bar {
         display: block;
         max-width: none;
-        background-color: $offwhite;
     }
     .ltr-namespace .mode-bar li a {
         font-size: 11px;
@@ -250,7 +251,6 @@
         width: 25%;
         list-style-type: none;
         text-align: center;
-        background-color: $color-secondary;
     }
 
     .ltr-namespace .mode-bar .deployment-menu li ul {
@@ -266,7 +266,6 @@
         float: none;
         width: auto;
         text-align: left;
-        background-color: transparent;
     }
 
     .ltr-namespace .mode-bar .deployment-menu li li a {
@@ -295,7 +294,6 @@
     }
 
     .ltr-namespace .mode-bar .account-menu a {
-        color: #C7CCD4;
         font-weight: normal;
         font-size: 14px;
         font-size: 1rem;
@@ -303,20 +301,11 @@
         padding: 16px;
     }
 
-    .ltr-namespace .mode-bar .account-menu a:hover {
-        color: $white;
-    }
-
-    .ltr-namespace .mode-bar .account-menu a:hover svg.iconic {
-        fill: $white;
-    }
-
     .ltr-namespace .mode-bar .account-menu a svg.iconic,
     .ltr-namespace .mode-bar .account-menu a svg.ushahidi-logo {
         display: inline-block;
         position: relative;
         top: 2px;
-        fill: #C7CCD4;
         width: 1em;
         height: 1em;
         margin: 0;
@@ -339,22 +328,6 @@
 
     .ltr-namespace .mode-bar.active .account-menu {
         display: block;
-    }
-
-    .ltr-namespace .mode-bar.active .deployment-menu li.persist.active a {
-        color: #C7CCD4;
-    }
-
-    .ltr-namespace .mode-bar.active .deployment-menu li.persist.active a svg.iconic {
-        fill: #C7CCD4;
-    }
-
-    .ltr-namespace .mode-bar.active .deployment-menu li.persist.more-menu-trigger a {
-        color: $color-primary;
-    }
-
-    .ltr-namespace .mode-bar.active .deployment-menu li.persist.more-menu-trigger a svg.iconic {
-        fill: $color-primary;
     }
 
     .ltr-namespace .mode-bar.active .deployment-menu li.tuck {
