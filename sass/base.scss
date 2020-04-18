@@ -14433,15 +14433,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     text-indent: 30px;
 }
 
-/* line 1, assets/sass/utils/overrides/_leaflet-overrides.scss */
-.ltr-namespace .leaflet-container {
-    font-weight: normal;
-    font-size: 14px;
-    font-size: 1rem;
-    font-size: 14px !important;
-    font-size: 1rem;
-}
-
 /* line 7, assets/sass/utils/overrides/_leaflet-overrides.scss */
 .ltr-namespace .leaflet-container a {
     color: #373E46 !important;
@@ -14459,15 +14450,22 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 19, assets/sass/utils/overrides/_leaflet-overrides.scss */
 .ltr-namespace .leaflet-container .dropdown-menu li a:hover {
-    color: #FFFFFF !important;
+    color: $white !important;
 }
 
 /* line 23, assets/sass/utils/overrides/_leaflet-overrides.scss */
 .ltr-namespace .leaflet-container .leaflet-popup-content-wrapper,
 .ltr-namespace .leaflet-container .leaflet-popup-tip {
-    box-shadow: none;
-    background: none;
+    background: $white;
+    border-radius: 0;
+    color: $text-primary;
     padding: 0;
+    .postcard {
+        box-shadow: none;
+        .postcard-body {
+            padding: 1em;
+        }
+    }
 }
 
 /* line 30, assets/sass/utils/overrides/_leaflet-overrides.scss */

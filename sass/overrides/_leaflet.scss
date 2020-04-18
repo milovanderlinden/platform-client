@@ -9,6 +9,7 @@
 
 // Override leaflet layer image path
 .leaflet-container {
+  font: inherit !important;
   z-index: 199;
 }
 // .leaflet-control-layers-toggle {
