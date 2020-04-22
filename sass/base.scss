@@ -23,80 +23,50 @@ h6 {
     font-size: 14px;
 }
 
-@-webkit-keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
 svg {
     width: 16px;
     height: 16px;
 }
 
-/* line 227, assets/sass/1_basics/_buttons.scss */
-.ltr-namespace .button-destructive.disabled,
-.ltr-namespace .button-destructive[disabled] {
+.button-destructive.disabled,
+.button-destructive[disabled] {
     cursor: default;
     color: #737373;
     background-color: $white;
 }
 
-/* line 232, assets/sass/1_basics/_buttons.scss */
-.ltr-namespace .button-destructive.disabled:hover,
-.ltr-namespace .button-destructive[disabled]:hover {
+.button-destructive.disabled:hover,
+.button-destructive[disabled]:hover {
     border: $border-default;
 }
 
-/* line 236, assets/sass/1_basics/_buttons.scss */
-.ltr-namespace .button-destructive.disabled:active,
-.ltr-namespace .button-destructive[disabled]:active {
+.button-destructive.disabled:active,
+.button-destructive[disabled]:active {
     border: $border-default;
 }
 
-/* line 1, assets/sass/1_basics/_containers.scss */
-.ltr-namespace .sheet,
-.ltr-namespace .listing-toolbar,
-.ltr-namespace .tour-message {
-    border-radius: 2px;
-    background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
-}
-
-/* line 8, assets/sass/1_basics/_containers.scss */
-.ltr-namespace .menu,
-.ltr-namespace .dropdown-menu,
-.ltr-namespace .mode-context {
-    border-radius: 2px;
+.sheet,
+.listing-toolbar,
+.tour-message,
+.bar,
+.toolbar,
+.picker__box,
+.menu,
+.dropdown-menu,
+.mode-context {
     background: $white;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow
 }
 
-/* line 15, assets/sass/1_basics/_containers.scss */
-.ltr-namespace .bar,
-.ltr-namespace .toolbar,
-.ltr-namespace .picker__box {
-    border-radius: 2px;
-    background-color: $white;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
-}
-
-/* line 22, assets/sass/1_basics/_containers.scss */
-.ltr-namespace .card {
-    border-radius: 2px;
+.card {
     background-color: $white;
     box-shadow: $thin-shadow;
 }
 
 /* line 9, assets/sass/1_basics/_forms.scss */
-.ltr-namespace label svg.iconic,
-.ltr-namespace .form-sheet .listing .listing-heading svg.iconic,
-.ltr-namespace .form-label svg.iconic {
+label svg.iconic,
+.form-sheet .listing .listing-heading svg.iconic,
+.form-label svg.iconic {
     width: 0.8em;
     height: 0.8em;
     fill: #959595;
@@ -4375,7 +4345,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 .ltr-namespace .message {
     position: relative;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     color: #FAFAFA;
     border-radius: 0px;
     background-color: $color-secondary;
@@ -4906,7 +4876,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .progress {
     border-radius: 2px;
     background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     font-weight: 600;
     font-size: 16px;
     font-size: 1.142857143rem;
@@ -5450,7 +5420,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     font-size: .857142857rem;
     line-height: 1.4;
     white-space: nowrap;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     color: #FEFEFE;
 }
 
@@ -9069,7 +9039,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     z-index: 100;
     border-radius: 2px;
     background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
 }
 
 /* line 3, assets/sass/utils/mixins/_clearfix.scss */
@@ -9651,7 +9621,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .toolbox {
     border-radius: 2px;
     background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
 }
 
 /* line 4, assets/sass/3_modules/_toolbox.scss */
@@ -10079,7 +10049,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .mainsheet .mainsheet-window {
     border-radius: 2px;
     background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -10238,7 +10208,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     position: relative;
     border-radius: 2px;
     background-color: #FAFAFA;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     overflow-y: hidden;
     padding: 0 16px;
     padding-top: 1px;
@@ -12960,7 +12930,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace.layout-f .login-window {
     background-color: #FAFAFA;
     border-radius: 2px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.24);
+    box-shadow: $thick-shadow;
     margin-left: 5%;
     margin-top: 24px;
     padding-top: 1px;
