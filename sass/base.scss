@@ -3898,11 +3898,9 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-/* line 90, assets/sass/2_fragments/_listing-item.scss */
 .ltr-namespace .listing-item .listing-item-secondary button,
 .ltr-namespace .listing-item .listing-item-secondary .button {
     line-height: normal;
-    margin-top: 18px;
 }
 
 /* line 95, assets/sass/2_fragments/_listing-item.scss */
@@ -4811,7 +4809,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 /* line 8, assets/sass/2_fragments/navigation/_breadcrumb.scss */
 .ltr-namespace .breadcrumbs li:after {
     content: '\003e';
-    color: #959595;
+    color: $color-secondary;
     margin: 0 8px;
 }
 
@@ -6444,14 +6442,8 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 1, assets/sass/2_fragments/_bulk-actions.scss */
 .ltr-namespace .bulk-action {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
-    width: inherit;
-    padding: 0 16px;
 }
 
 @media screen and (min-width: 64em) {
@@ -7406,7 +7398,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 1, assets/sass/3_modules/_listing.scss */
 .ltr-namespace .listing {
-    position: relative;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding: 1em;
@@ -10648,12 +10639,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     transition: all 0.25s;
 }
 
-/* line 13, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .breadcrumbs li:after {
-    background: #1E232A !important;
-}
-
-/* line 21, assets/sass/4_blocks/_mode-context.scss */
 .ltr-namespace .mode-context .mode-context-back svg.iconic {
     width: 24px;
     height: 24px;
@@ -10883,22 +10868,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-/* line 208, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .breadcrumbs a {
-    color: #C7CCD4;
-}
-
-/* line 211, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .breadcrumbs a:hover {
-    color: $white;
-}
-
-/* line 218, assets/sass/4_blocks/_mode-context.scss */
-.ltr-namespace .mode-context .breadcrumbs li:after {
-    background-color: #EEEEEE;
-}
-
-/* line 236, assets/sass/4_blocks/_mode-context.scss */
 .ltr-namespace .mode-context .tool .tool-trigger svg.iconic {
     fill: #C7CCD4;
 }
@@ -11772,11 +11741,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-/* line 292, assets/sass/5_layouts/_layout-general.scss */
-.ltr-namespace[class*="layout-"] [role="main"] .listing {
-    margin-bottom: 24px;
-}
-
 @media screen and (min-width: 30em) {
 
     /* line 295, assets/sass/5_layouts/_layout-general.scss */
@@ -12488,12 +12452,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     background-color: $color-secondary;
 }
 
-/* line 1, assets/sass/5_layouts/_layout-d.scss */
-.ltr-namespace.layout-d {
-    height: 100%;
-}
-
-
 @media screen and (max-width: 1023px) {
 
     .ltr-namespace.layout-d [role="main"] {
@@ -12511,10 +12469,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 @media screen and (min-width: 64em) {
 
-    /* line 1, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d {
-        overflow: hidden;
-    }
     .ltr-namespace.layout-d [role="main"] {
         padding-left: $bar-width;
     }
@@ -12623,7 +12577,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     .ltr-namespace.layout-d [role="main"] .timeline-col,
     .ltr-namespace.layout-d [role="main"] .post-col {
         overflow-y: scroll;
-        max-height: 94vh;
     }
 }
 
@@ -12649,10 +12602,10 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
 
     /* line 91, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d [role="main"] .timeline-col {
+    .ltr-namespace.layout-d [role="main"] .flex-container {
         padding-top: 68px;
     }
 }
@@ -12859,12 +12812,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     fill: #C7CCD4;
 }
 
-/* line 269, assets/sass/5_layouts/_layout-d.scss */
-.ltr-namespace.layout-d [role="main"] .post-col {
-    padding: 0 16px;
-    margin-bottom: 45px;
-}
-
 @media screen and (max-width: 1023px) {
 
     /* line 269, assets/sass/5_layouts/_layout-d.scss */
@@ -12877,11 +12824,8 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
     /* line 269, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .post-col {
-        width: 65%;
-        padding-top: 32.0px;
-        padding-left: 32.0px;
-        padding-right: 32.0px;
-        margin-bottom: 0;
+        width: 100%;
+        padding: 1em;
         direction: ltr;
     }
 }
@@ -12891,7 +12835,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 284, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .post-col.active {
         display: block;
-        margin-top: 68px;
     }
 }
 
@@ -13269,11 +13212,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-/* line 18, assets/sass/5_layouts/_layout-embed.scss */
-.ltr-namespace.layout-embed.layout-d {
-    padding-left: 0;
-}
-
 @media screen and (min-width: 64em) {
 
     /* line 21, assets/sass/5_layouts/_layout-embed.scss */
@@ -13293,7 +13231,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 @media screen and (max-width: 1023px) {
 
     /* line 33, assets/sass/5_layouts/_layout-embed.scss */
-    .ltr-namespace.layout-embed.layout-d [role="main"] .timeline-col {
+    .ltr-namespace.layout-embed.layout-d [role="main"] .flex-container {
         padding-top: 72px;
     }
 }
