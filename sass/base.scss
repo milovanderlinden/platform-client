@@ -90,7 +90,7 @@ svg {
 .ltr-namespace .card {
     border-radius: 2px;
     background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 /* line 9, assets/sass/1_basics/_forms.scss */
@@ -608,7 +608,7 @@ svg {
     top: -4px;
     width: 50%;
     height: 22px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 /* line 408, assets/sass/1_basics/_forms.scss */
@@ -2796,7 +2796,7 @@ a .ltr-namespace img {
     margin: 0;
     border-radius: 2px;
     background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 /* line 380, assets/sass/2_fragments/_forms.scss */
@@ -3351,7 +3351,7 @@ a .ltr-namespace img {
     right: -16px;
     bottom: -16px;
     left: -16px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 /* line 783, assets/sass/2_fragments/_forms.scss */
@@ -6527,7 +6527,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     position: relative;
     border-radius: 2px;
     background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
     background-color: #FAFAFA;
     /*
     .dropdown-menu {
@@ -7128,7 +7128,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     right: -16px;
     bottom: -16px;
     left: -16px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 @media screen and (max-width: 30.063em) {
@@ -7717,7 +7717,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .postcard {
     position: relative;
     border-radius: 2px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
 }
 
 /* line 7, assets/sass/3_modules/_postcard.scss */
@@ -11894,12 +11894,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     display: block;
 }
 
-/* line 451, assets/sass/5_layouts/_layout-general.scss */
-.ltr-namespace[class*="layout-"] [role="main"] .form-sheet,
-.ltr-namespace[class*="layout-"] [role="main"] .postcard[role="article"] {
-    margin-bottom: 24px;
-}
-
 @media screen and (max-width: 767px) {
 
     /* line 457, assets/sass/5_layouts/_layout-general.scss */
@@ -11914,7 +11908,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 462, assets/sass/5_layouts/_layout-general.scss */
     .ltr-namespace[class*="layout-"] [role="main"] .form-sheet+.toolbox,
     .ltr-namespace[class*="layout-"] [role="main"] .postcard[role="article"]+.toolbox {
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+        box-shadow: $thin-shadow;
         margin-bottom: 24px;
     }
 }
@@ -12233,7 +12227,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 
 /* line 731, assets/sass/5_layouts/_layout-general.scss */
 .ltr-namespace[class*="layout-"] .mainsheet.init.active .mainsheet-window {
-    bottom: 0;
+    bottom: 50%;
 }
 
 @media screen and (min-width: 64em) {
@@ -12571,16 +12565,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     }
 }
 
-@media screen and (min-width: 64em) {
-
-    /* line 81, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d [role="main"] .timeline-col,
-    .ltr-namespace.layout-d [role="main"] .post-col {
-        overflow-y: scroll;
-    }
-}
-
-/* line 91, assets/sass/5_layouts/_layout-d.scss */
 .ltr-namespace.layout-d [role="main"] .timeline-col {
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -12763,17 +12747,11 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     content: none;
 }
 
-/* line 233, assets/sass/5_layouts/_layout-d.scss */
-.ltr-namespace.layout-d [role="main"] .timeline-col .postcard.selected {
-    left: 0;
-}
-
 @media screen and (min-width: 64em) {
 
     /* line 233, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .timeline-col .postcard.selected {
-        left: 32px;
-        margin-right: 32px;
+        box-shadow: $thick-shadow-highlight;
     }
 }
 
@@ -12835,14 +12813,6 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     /* line 284, assets/sass/5_layouts/_layout-d.scss */
     .ltr-namespace.layout-d [role="main"] .post-col.active {
         display: block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-    /* line 284, assets/sass/5_layouts/_layout-d.scss */
-    .ltr-namespace.layout-d [role="main"] .post-col.active {
-        margin-top: 120px;
     }
 }
 
@@ -13970,7 +13940,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 .ltr-namespace .picker--time .picker__box .picker__list {
     border-radius: 2px;
     background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -14193,7 +14163,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
     height: 6px;
     border-radius: 2px;
     background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $thin-shadow;
     margin-top: -6px;
     box-sizing: content-box;
 }
