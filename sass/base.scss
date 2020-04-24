@@ -11909,7 +11909,7 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
         top: 146px;
         right: 16px;
         z-index: 1000;
-        width: 206px;
+        min-width: 206px;
     }
 }
 
@@ -13247,11 +13247,8 @@ fieldset .ltr-namespace .form-fieldgroup fieldset legend {
 }
 
 @media screen and (min-width: 48em) {
-
-    /* line 86, assets/sass/5_layouts/_layout-embed.scss */
     .ltr-namespace.layout-embed [role="main"] .toolbox {
         width: auto;
-        max-width: 206px;
     }
 }
 
